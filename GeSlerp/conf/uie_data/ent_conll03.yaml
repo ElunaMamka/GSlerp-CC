@@ -1,0 +1,5 @@
+task_name: Mirror_SingleTask_Ent_CoNLL03-instruct
+data_dir: resources/Mirror/uie/ent/conll03/instruc
+best_metric_field: ent.micro.f1
+train_batch_size: 16
+eval_batch_size: 16

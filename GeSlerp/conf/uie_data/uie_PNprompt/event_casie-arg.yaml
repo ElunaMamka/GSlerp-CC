@@ -1,0 +1,9 @@
+task_name: Mirror_SingleTask_Event_CASIE-arg-prompt_PN
+data_dir: resources/Mirror/uie/event/casie/prompt_PN
+best_metric_field: event.arg_cls.f1
+
+
+train_batch_size: 8
+eval_batch_size: 8
+
+random_seed: 24314

@@ -1,0 +1,5 @@
+task_name: Mirror_SingleTask_Rel_CoNLL04
+data_dir: resources/Mirror/uie/rel/conll04
+best_metric_field: rel.rel.micro.f1
+train_batch_size: 16
+eval_batch_size: 16

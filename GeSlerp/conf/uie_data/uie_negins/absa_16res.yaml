@@ -1,0 +1,9 @@
+task_name: Mirror_SingleTask_ABSA_16res-prompt
+data_dir: resources/Mirror/uie/absa/16res/prompt
+best_metric_field: rel.rel.micro.f1
+train_batch_size: 16
+eval_batch_size: 16
+num_epochs: 20
+
+
+random_seed: 42

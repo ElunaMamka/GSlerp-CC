@@ -1,0 +1,10 @@
+task_name: Mirror_SingleTask_Rel_CoNLL04-prmot
+data_dir: resources/Mirror/uie/rel/conll04/prompt
+best_metric_field: rel.rel.micro.f1
+train_batch_size: 10
+eval_batch_size: 10
+num_epochs: 20
+epoch_patience: -1
+step_patience: -1
+
+random_seed: 3407

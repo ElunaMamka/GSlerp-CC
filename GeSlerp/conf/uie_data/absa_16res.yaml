@@ -1,0 +1,8 @@
+task_name: Mirror_SingleTask_ABSA_16res
+data_dir: resources/Mirror/uie/absa/16res
+best_metric_field: rel.rel.micro.f1
+train_batch_size: 16
+eval_batch_size: 16
+
+
+random_seed: 3407

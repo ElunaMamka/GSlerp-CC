@@ -1,0 +1,11 @@
+task_name: Mirror_SingleTask_Ent_CoNLL03-prompt
+data_dir: resources/Mirror/uie/ent/conll03/prompt
+best_metric_field: ent.micro.f1
+train_batch_size: 24
+eval_batch_size: 200
+num_epochs: 200
+epoch_patience: -1
+step_patience: -1
+
+
+random_seed: 24314

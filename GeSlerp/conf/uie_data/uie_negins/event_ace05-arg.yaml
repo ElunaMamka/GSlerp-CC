@@ -1,0 +1,10 @@
+task_name: Mirror_SingleTask_Event_ACE05
+data_dir: resources/Mirror/uie/event/ace05-evt/prompt
+best_metric_field: event.arg_cls.f1
+
+
+train_batch_size: 8
+eval_batch_size: 8
+
+
+random_seed: 3407

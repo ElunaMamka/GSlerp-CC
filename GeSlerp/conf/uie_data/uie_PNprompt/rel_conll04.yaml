@@ -1,0 +1,12 @@
+task_name: Mirror_SingleTask_Rel_CoNLL04-promptPN
+data_dir: resources/Mirror/uie/rel/conll04/prompt_PN
+best_metric_field: rel.rel.micro.f1
+train_batch_size: 12
+eval_batch_size: 12
+num_epochs: 20
+epoch_patience: -1
+step_patience: -1
+
+
+
+random_seed: 521
