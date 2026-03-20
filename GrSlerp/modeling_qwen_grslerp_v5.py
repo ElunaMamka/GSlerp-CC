@@ -96,10 +96,14 @@ def value_select_merge(
     token_b: torch.Tensor,
     anchor_score: float,
     drop_score: float,
+    eps: float = 1e-8,
 ) -> torch.Tensor:
-    if drop_score > anchor_score:
-        return token_b
-    return token_a
+    orig_dtype = token_a.dtype
+    denom = anchor_score + drop_score + eps
+    t = anchor_score / denom if denom > eps else 0.5
+    t = t / 100.0
+    t_tensor = torch.as_tensor(t, device=token_a.device, dtype=token_a.dtype)
+    return ((1 - t_tensor) * token_a + t_tensor * token_b).to(dtype=orig_dtype)
 
 
 def _select_mid_indices(length: int, compression_ratio: float, attn_score: torch.Tensor) -> Tuple[List[int], List[int]]:
